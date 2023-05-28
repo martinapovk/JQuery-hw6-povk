@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Individual_6</title>
+    <style type="text/css">
+      div {
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      function showRandomDiv() {
+        var divs = document.querySelectorAll('div[id^="div"]');
+        var randomDiv = divs[Math.floor(Math.random() * divs.length)];
+        randomDiv.style.display = "block";
+        // setTimeout(hideAllDivs, 3000);
+      }
+      function hideAllDivs() {
+        var divs = document.querySelectorAll('div[id^="div"]');
+        for (var i = 0; i < divs.length; i++) {
+          divs[i].style.display = "none";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="div1">Text 1</div>
+    <div id="div2">Text 2</div>
+    <div id="div3">Text 3</div>
+    <div id="div4">Text 4</div>
+    <div id="div5">Text 5</div>
+    <button onclick="showRandomDiv()">Show Random Div</button>
+    <button onclick="hideAllDivs()">Hide All Divs</button>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+header {
+  margin-bottom: 0;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
+}
+
+img {
+  width: 500px;
+}
